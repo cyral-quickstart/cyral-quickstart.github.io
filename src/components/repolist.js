@@ -21,7 +21,7 @@ const groups = [{
 
 export default function RepoList() {
     const [Groups, setGroups] = useState([])
-    
+
     const getData = () => {
         const octokit = new Octokit();
         octokit.rest.repos
@@ -64,6 +64,7 @@ export default function RepoList() {
                 if (item.repos.length > 0) {
                     return <RepoGroup key={i} data={item} />
                 }
+                return ""
             })}
         </div>
     );
