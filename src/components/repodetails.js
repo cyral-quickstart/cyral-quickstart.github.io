@@ -1,8 +1,9 @@
 import React from "react";
+import { CTableRow, CTableDataCell } from '@coreui/react';
 
 export default function RepoDetails(props){
     return(
-        <tr><td><a href={props.data.url}>{props.data.name}</a></td><td>{props.data.description}</td><td>{(new Date(props.data.lastupdate)).toLocaleDateString()}</td></tr> 
+        <CTableRow><CTableDataCell><a href={props.data.url}>{props.data.name}</a></CTableDataCell><CTableDataCell>{props.data.description}</CTableDataCell><CTableDataCell>{(new Date(props.data.lastupdate)).toLocaleDateString()}</CTableDataCell></CTableRow> 
     )
 
 }

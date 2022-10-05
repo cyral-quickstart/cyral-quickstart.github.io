@@ -16,7 +16,7 @@ nav {
   background-color: #26459e;
   margin: 0px;
   padding: 10px;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(12px + 2vmin);
   color:#E8EFF8
 }
 .App-header {
@@ -25,13 +25,20 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(5px + 2vmin);
   color: #0f1b3b;
 }
 
 .App-link {
   color: #61dafb;
+}
+table{
+  font-size: calc(4px + 2vmin);
+}
+h1 {
+  text-decoration: underline;
+  margin-top: 100px;
+  font-size: calc(20px + 2vmin);
 }
 
 @keyframes App-logo-spin {
