@@ -6,7 +6,6 @@ import { CTableRow, CTable, CTableHead, CTableHeaderCell, CTableBody } from '@co
 
 
 export default function RepoGroup(props) {
-    console.log(props)
     return (
         <div>
             <h1>{props.data.name}</h1>
