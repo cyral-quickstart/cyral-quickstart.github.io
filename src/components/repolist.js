@@ -42,7 +42,7 @@ export default function RepoList() {
             })
             .then(({ data }) => {
                 return data
-                  .filter(repo => repo.name.toLowerCase().startsWith('quickstart-'))
+                  .filter(repo => repo.name.toLowerCase().startsWith('quickstart-sidecar')) // typically this is only 'quickstart-' but for now limit it to only sidecars
                   .reduce((groups, repo) => {
                     const groupName = repo.name.split('-')[1].toLowerCase();
                     
