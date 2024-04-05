@@ -61,7 +61,7 @@ export default function RepoList() {
                       });
                     }
               
-                    return groups
+                    return groups;
                   }, [...groups]);
               })
             .then(data => {
